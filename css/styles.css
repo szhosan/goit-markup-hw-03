@@ -53,7 +53,7 @@ img
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid tomato;
+    /*outline: 2px solid tomato;*/
 }
 
 /*------------- header --------------*/
@@ -79,7 +79,7 @@ img
 .site-nav .nav-item:not(:last-child)
 {
     margin-right: 40px;
-    outline: 1px solid tomato;
+    /*outline: 1px solid tomato;*/
 }
 
 .nav-menu
@@ -161,8 +161,7 @@ img
 
 .main-title
 {
-    padding-top: 200px;
-    width: 696px;
+    max-width: 696px;
     margin-left: auto;
     margin-right: auto;
 
@@ -177,6 +176,9 @@ img
 
 .main-header-section
 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     text-align: center;
     background-color: #2F303A;
 }
@@ -184,8 +186,7 @@ img
 
 .btn
 {
-    margin-top: 30px;
-    margin-bottom: 200px;
+    margin-top: 30px;    
     padding: 10px 32px;
     font-family: inherit;
     font-weight: 700;
@@ -206,7 +207,8 @@ img
 
 .benefits-container
 {
-    display: flex;    
+    padding-top: 94px;
+    padding-bottom: 94px;   
 }
 
 .benefits-list
@@ -215,10 +217,8 @@ img
 }
 
 .benefits-list .benefits-list-item
-{
-    margin-top: 94px;
-    margin-bottom: 94px;
-    width: calc((100%-30px*3)/4);    
+{    
+    width: calc((100% - 30px*3)/4);    
 }
 .benefits-list .benefits-list-item:not(:last-child)
 {
@@ -245,6 +245,7 @@ img
 
 .secondary-title
 {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -255,8 +256,7 @@ img
 
 .team-name-title
 {
-    margin-top: 30px;
-
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -264,11 +264,14 @@ img
     letter-spacing: 0.03em;    
 }
 
+.team-list-item-cont
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .team-name-after-title
 {
-    margin-top: 10px;
-    margin-bottom: 30px;
-
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -278,7 +281,14 @@ img
 
 .team-section
 {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--secondary-background-color);
+}
+
+.our-works-section
+{
+    padding-bottom: 94px;
 }
 
 .our-works-list
@@ -287,33 +297,26 @@ img
     justify-content: space-between;
 }
 
+
 .our-works-list .our-works-list-item
 {
-    margin-top: 50px;
-    margin-bottom: 94px;
-}
-
-.our-team-title
-{
-    padding-top: 94px;
+    width: 370px;
 }
 
 .team-list
 {
     display:flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: 50px;
-    padding-bottom: 94px;
+    margin-left: -30px;      
 }
 
 .team-list-item
 {
-    width: /*calc((100%-30px*4)/4)*/270px;
+    width: calc((100% - 30px * 4) / 4);
     margin-left: 30px;
 
     background-color: var(--third-text-color);
-    /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);*/
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -321,13 +324,9 @@ img
 
 .footer
 {
-    background-color: #2F303A;
-}
-
-.footer-container
-{
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: #2F303A;
 }
 
 .footer-address
@@ -394,7 +393,8 @@ img
 
 .work-list-container
 {
-    padding-bottom: 93px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .work-list
@@ -407,33 +407,33 @@ img
 
 .work-list .work-list-item
 {
-    width: /*calc((100%-60px)/3)*/370px;
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
 
     border-bottom: 1px solid #ECECEC;
+    border-left: 1px solid #ECECEC;
+    border-right: 1px solid #ECECEC;
+
 }
 .work-list .work-list-item:nth-child(3n)
 {
     margin-right: 0;
 }
 
-/*.work-list .work-list-item:nth-last-child(-n+3)
-{
-    margin-bottom: 0;
-}*/
-
 .filter-btn-list
 {
     display: flex;
-    padding-top: 91px;
     justify-content: center;  
+}
+
+.work-list-item-txt
+{
+    padding: 20px 24px;
 }
 
 .our-works-title
 {
-    margin-top: 20px;
-    margin-left: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -443,8 +443,6 @@ img
 .our-works-subtitle
 {
     margin-top: 4px;
-    margin-left: 24px;
-    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
