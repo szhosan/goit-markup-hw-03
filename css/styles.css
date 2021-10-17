@@ -56,6 +56,20 @@ img
     /*outline: 2px solid tomato;*/
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 /*------------- header --------------*/
 
 .header
@@ -237,6 +251,7 @@ img
 
 .benefits-after-title
 {
+    margin-top: 10px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -266,8 +281,8 @@ img
 
 .team-list-item-cont
 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-name-after-title
@@ -293,13 +308,14 @@ img
 
 .our-works-list
 {
-    display: flex;
-    justify-content: space-between;
+    margin-right: -30px;
+    display: flex;    
 }
 
 
 .our-works-list .our-works-list-item
 {
+    margin-right: 30px;
     width: 370px;
 }
 
@@ -352,7 +368,12 @@ img
     color: var(--adress-text-color);    
 }
 
-.footer-address-list-item
+.footer-adress-list
+{
+    margin-top: 9px;
+}
+
+.footer-address-list-item:not(:first-child)
 {
     margin-top: 9px;
 }
