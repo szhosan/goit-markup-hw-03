@@ -411,11 +411,9 @@ img
     margin-right: 30px;
     margin-bottom: 30px;
 
-    overflow: hidden;
+    /*overflow: hidden;*/
 
-    border-bottom: 1px solid #ECECEC;
-    border-left: 1px solid #ECECEC;
-    border-right: 1px solid #ECECEC;
+    
 
 }
 .work-list .work-list-item:nth-child(3n)
@@ -432,6 +430,9 @@ img
 .work-list-item-txt
 {
     padding: 20px 24px;
+    border-bottom: 1px solid #ECECEC;
+    border-left: 1px solid #ECECEC;
+    border-right: 1px solid #ECECEC;
 }
 
 .our-works-title
